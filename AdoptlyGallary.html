@@ -10,32 +10,139 @@
   <script defer src="Adoptly.js"></script>
 </head>
 <body>
-  <header role="banner">
-    <div class="logo gallery-logo">
-      <h1>Adoptly Gallery</h1>
-    </div>
-    <nav role="navigation">
-        <ul>
-            <li><a href="C:/Users/daudi/OneDrive/Desktop/AdoptlyHome.html">Home</a></li>
-            <li><a href="C:/Users/daudi/OneDrive/Desktop/AdoptlyGallery.html">Gallery</a></li>
-            <li><a href="C:/Users/daudi/OneDrive/Desktop/AdoptlySign-Up.html">Sign Up</a></li>
-            <li><a href="C:/Users/daudi/OneDrive/Desktop/AdoptlyQuiz.html">Pet Matcher</a></li>
-          </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="gallery" aria-label="Gallery of Pets">
-      <h2>Our Adorable Pets</h2>
-      <div class="gallery-grid">
-        <div class="gallery-item"><img src="https://via.placeholder.com/300x200?text=Pet+1" alt="Pet 1"></div>
-        <div class="gallery-item"><img src="https://via.placeholder.com/300x200?text=Pet+2" alt="Pet 2"></div>
-        <div class="gallery-item"><img src="https://via.placeholder.com/300x200?text=Pet+3" alt="Pet 3"></div>
-        <div class="gallery-item"><img src="https://via.placeholder.com/300x200?text=Pet+4" alt="Pet 4"></div>
+<header role="banner">
+  <div class="logo gallery-logo">
+    <h1>Adoptly Gallery</h1>
+  </div>
+  <nav role="navigation">
+    <ul>
+      <li><a href="AdoptlyHome.html">Home</a></li>
+      <li><a href="AdoptlyGallery.html">Gallery</a></li>
+      <li><a href="AdoptlySign-Up.html">Sign Up</a></li>
+      <li><a href="AdoptlyQuiz.html">Pet Matcher</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="gallery" aria-label="Gallery of Pets">
+    <h2>Our Adorable Pets</h2>
+
+    <!-- Filter Container (will be populated by JavaScript) -->
+    <div class="filter-container"></div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item" data-category="dog">
+        <div class="pet-card">
+          <img src="https://via.placeholder.com/300x200?text=Buddy" alt="Buddy - Golden Retriever">
+          <div class="pet-info">
+            <h3>Buddy</h3>
+            <p class="pet-breed">Golden Retriever</p>
+            <p class="pet-age">2 years old</p>
+            <p class="pet-description">Friendly and energetic, loves to play fetch!</p>
+            <button class="pet-details-btn">View Details</button>
+            <button class="favorite-btn" data-pet-id="1">Add to Favorites</button>
+          </div>
+        </div>
       </div>
-    </section>
-  </main>
-  <footer role="contentinfo">
-    <p>&copy; 2025 Adoptly. All rights reserved.</p>
-  </footer>
+
+      <div class="gallery-item" data-category="cat">
+        <div class="pet-card">
+          <img src="https://via.placeholder.com/300x200?text=Luna" alt="Luna - Siamese Cat">
+          <div class="pet-info">
+            <h3>Luna</h3>
+            <p class="pet-breed">Siamese Cat</p>
+            <p class="pet-age">1 year old</p>
+            <p class="pet-description">Playful and affectionate, enjoys laser pointers.</p>
+            <button class="pet-details-btn">View Details</button>
+            <button class="favorite-btn" data-pet-id="2">Add to Favorites</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="dog">
+        <div class="pet-card">
+          <img src="https://via.placeholder.com/300x200?text=Max" alt="Max - German Shepherd">
+          <div class="pet-info">
+            <h3>Max</h3>
+            <p class="pet-breed">German Shepherd</p>
+            <p class="pet-age">3 years old</p>
+            <p class="pet-description">Intelligent and loyal, great with families.</p>
+            <button class="pet-details-btn">View Details</button>
+            <button class="favorite-btn" data-pet-id="3">Add to Favorites</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="cat">
+        <div class="pet-card">
+          <img src="https://via.placeholder.com/300x200?text=Oliver" alt="Oliver - Tabby Cat">
+          <div class="pet-info">
+            <h3>Oliver</h3>
+            <p class="pet-breed">Tabby Cat</p>
+            <p class="pet-age">4 years old</p>
+            <p class="pet-description">Calm and independent, loves sunny spots.</p>
+            <button class="pet-details-btn">View Details</button>
+            <button class="favorite-btn" data-pet-id="4">Add to Favorites</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="dog">
+        <div class="pet-card">
+          <img src="https://via.placeholder.com/300x200?text=Charlie" alt="Charlie - Beagle">
+          <div class="pet-info">
+            <h3>Charlie</h3>
+            <p class="pet-breed">Beagle</p>
+            <p class="pet-age">2 years old</p>
+            <p class="pet-description">Curious and friendly, has a great nose!</p>
+            <button class="pet-details-btn">View Details</button>
+            <button class="favorite-btn" data-pet-id="5">Add to Favorites</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="other">
+        <div class="pet-card">
+          <img src="https://via.placeholder.com/300x200?text=Coco" alt="Coco - Rabbit">
+          <div class="pet-info">
+            <h3>Coco</h3>
+            <p class="pet-breed">Rabbit</p>
+            <p class="pet-age">1 year old</p>
+            <p class="pet-description">Gentle and quiet, loves carrots and greens.</p>
+            <button class="pet-details-btn">View Details</button>
+            <button class="favorite-btn" data-pet-id="6">Add to Favorites</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Favorites Section -->
+    <div id="favorites-section" class="favorites-section"></div>
+
+    <!-- Pet Modal (for detailed view) -->
+    <div id="pet-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="modal-pet-details"></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer role="contentinfo">
+  <div class="footer-contact">
+    <p>
+      Contact us:
+      <a href="mailto:contact@adoptly.com">contact@adoptly.com</a> |
+      Phone: +1234567890
+    </p>
+  </div>
+  <div class="footer-social">
+    <a href="https://facebook.com" target="_blank" aria-label="Facebook">Facebook</a> |
+    <a href="https://twitter.com" target="_blank" aria-label="Twitter">Twitter</a> |
+    <a href="https://instagram.com" target="_blank" aria-label="Instagram">Instagram</a>
+  </div>
+  <p>&copy; 2025 Adoptly. All rights reserved.</p>
+</footer>
+<div class="back-to-top" aria-label="Back to top">&#8679;</div>
 </body>
 </html>
