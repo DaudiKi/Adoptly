@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adoptly - Pet Matcher</title>
+  <meta name="description" content="Find your perfect pet match with our interactive quiz at Adoptly.">
+  <meta name="keywords" content="quiz, pet matcher, pet adoption, match">
+  <link rel="stylesheet" href="Adoptly.css">
+  <script defer src="Adoptly.js"></script>
+</head>
+<body>
+  <header role="banner">
+    <div class="logo">
+      <h1>Adoptly Pet Matcher</h1>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="C:/Users/daudi/OneDrive/Desktop/AdoptlyHome.html">Home</a></li>
+            <li><a href= "C:/Users/daudi/OneDrive/Desktop/AdoptlyGallery.html>Gallery">Gallery</a></li>
+            <li><a href= "C:/Users/daudi/OneDrive/Desktop/AdoptlySign-Up.html">Sign Up</a></li>
+            <li><a href="C:/Users/daudi/OneDrive/Desktop/AdoptlyQuiz.html">Pet Matcher</a></li>
+        </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="pet-matcher" aria-label="Pet Matcher Quiz">
+      <h2>Find Your Perfect Pet</h2>
+      <form id="quizForm" novalidate>
+        <div class="form-group">
+          <label for="petSize">What size of pet do you prefer?</label>
+          <select id="petSize" name="petSize">
+            <option value="">Select a size</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="activityLevel">What is your activity level?</label>
+          <select id="activityLevel" name="activityLevel">
+            <option value="">Select activity level</option>
+            <option value="low">Low</option>
+            <option value="moderate">Moderate</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="indoorOutdoor">Do you prefer indoor or outdoor pets?</label>
+          <select id="indoorOutdoor" name="indoorOutdoor">
+            <option value="">Select preference</option>
+            <option value="indoor">Indoor</option>
+            <option value="outdoor">Outdoor</option>
+            <option value="both">Both</option>
+          </select>
+        </div>
+        <button type="button" id="quizSubmit">Find My Pet</button>
+      </form>
+      <div id="quizResult" aria-live="polite"></div>
+    </section>
+  </main>
+  <footer role="contentinfo">
+    <p>&copy; 2025 Adoptly. All rights reserved.</p>
+  </footer>
+</body>
+</html>
