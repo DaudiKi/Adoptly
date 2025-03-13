@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adoptly - Sign Up</title>
+  <meta name="description" content="Sign up to adopt a pet at Adoptly.">
+  <meta name="keywords" content="Sign Up, adoption, pet adoption, form">
+  <link rel="stylesheet" href="Adoptly.css">
+  <script defer src="Adoptly.js"></script>
+</head>
+<body>
+<header role="banner">
+  <div class="logo">
+    <h1>Adoptly</h1>
+  </div>
+  <nav role="navigation">
+    <ul>
+      <li><a href="AdoptlyHome.html">Home</a></li>
+      <li><a href="AdoptlyGallery.html">Gallery</a></li>
+      <li><a href="AdoptlySign-Up.html">Sign Up</a></li>
+      <li><a href="AdoptlyQuiz.html">Pet Matcher</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="signup" aria-label="Sign Up Form">
+    <h2>Sign Up to Adopt</h2>
+    <form id="signupForm" novalidate>
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Your full name" required pattern="[A-Za-z\s]+">
+        <span class="error" id="nameError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email address" required>
+        <span class="error" id="emailError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g., +1234567890" required pattern="^(\+?\d{1,3}[- ]?)?\d{10}$">
+        <span class="error" id="phoneError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+        <span class="error" id="dobError"></span>
+        <small class="help-text">You must be 18 years or older to adopt a pet.</small>
+      </div>
+
+      <div class="form-group">
+        <label for="accountType">Account Type</label>
+        <select id="accountType" name="accountType" required>
+          <option value="">Select account type</option>
+          <option value="adopter">Adopter</option>
+          <option value="volunteer">Volunteer</option>
+          <option value="rescuer">Rescuer</option>
+        </select>
+        <span class="error" id="accountError"></span>
+      </div>
+
+      <!-- Account type specific fields (will be shown/hidden by JavaScript) -->
+      <div id="adopterFields" class="account-specific-fields">
+        <div class="form-group">
+          <label for="housingType">Housing Type</label>
+          <select id="housingType" name="housingType">
+            <option value="">Select housing type</option>
+            <option value="apartment">Apartment</option>
+            <option value="house">House</option>
+            <option value="townhouse">Townhouse</option>
+            <option value="farm">Farm/Rural</option>
+          </select>
+          <span class="error" id="housingError"></span>
+        </div>
+      </div>
+
+      <div id="volunteerFields" class="account-specific-fields">
+        <div class="form-group">
+          <label for="availability">Availability</label>
+          <select id="availability" name="availability">
+            <option value="">Select availability</option>
+            <option value="weekdays">Weekdays</option>
+            <option value="weekends">Weekends</option>
+            <option value="evenings">Evenings</option>
+            <option value="flexible">Flexible</option>
+          </select>
+          <span class="error" id="availabilityError"></span>
+        </div>
+      </div>
+
+      <div id="rescuerFields" class="account-specific-fields">
+        <div class="form-group">
+          <label for="experience">Years of Experience</label>
+          <input type="number" id="experience" name="experience" placeholder="Years of rescue experience">
+          <span class="error" id="experienceError"></span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Create a strong password" required>
+        <span class="error" id="passwordError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter your password" required>
+        <span class="error" id="confirmPasswordError"></span>
+      </div>
+
+      <div class="form-group checkbox-group">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the <a href="#" class="terms-link">Terms and Conditions</a></label>
+        <span class="error" id="termsError"></span>
+      </div>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </section>
+</main>
+<footer role="contentinfo">
+  <div class="footer-contact">
+    <p>
+      Contact us:
+      <a href="mailto:contact@adoptly.com">contact@adoptly.com</a> |
+      Phone: +1234567890
+    </p>
+  </div>
+  <div class="footer-social">
+    <a href="https://facebook.com" target="_blank" aria-label="Facebook">Facebook</a> |
+    <a href="https://twitter.com" target="_blank" aria-label="Twitter">Twitter</a> |
+    <a href="https://instagram.com" target="_blank" aria-label="Instagram">Instagram</a>
+  </div>
+  <p>&copy; 2025 Adoptly. All rights reserved.</p>
+</footer>
+<div class="back-to-top" aria-label="Back to top">&#8679;</div>
+
+<!-- Terms and Conditions Modal -->
+<div id="terms-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2>Terms and Conditions</h2>
+    <div class="terms-content">
+      <h3>Adoption Agreement</h3>
+      <p>By creating an account on Adoptly, you agree to provide accurate information about yourself and your living situation. This helps us ensure the best match between pets and their potential new homes.</p>
+
+      <h3>Privacy Policy</h3>
+      <p>We respect your privacy and will only use your personal information to facilitate the adoption process. Your information will not be shared with third parties without your consent.</p>
+
+      <h3>Adoption Process</h3>
+      <p>Creating an account does not guarantee approval for adoption. All adopters must complete our screening process, which may include a home visit, reference checks, and an interview.</p>
+
+      <h3>Account Responsibilities</h3>
+      <p>You are responsible for maintaining the confidentiality of your account and password. Please notify us immediately of any unauthorized use of your account.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
