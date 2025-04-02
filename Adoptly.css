@@ -254,4 +254,130 @@ body {
     width: 100%;
     border-radius: 10px;
   }
-  
+
+  /* Success and Error Messages */
+.success {
+    color: #2ecc71;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #e8f7ee;
+    border-radius: 5px;
+}
+
+.error {
+    color: red;
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+}
+
+.form-group .error {
+    position: static;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Profile Section */
+.profile {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Login Section */
+.login {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  /* Add these styles to your Adoptly.css file */
+
+/* Password Strength Indicator */
+.password-strength {
+    margin-top: 5px;
+    height: 5px;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+.password-strength.very-weak {
+    width: 20%;
+    background-color: #ff4d4d;
+}
+
+.password-strength.weak {
+    width: 40%;
+    background-color: #ff8533;
+}
+
+.password-strength.medium {
+    width: 60%;
+    background-color: #ffcc00;
+}
+
+.password-strength.strong {
+    width: 80%;
+    background-color: #99cc00;
+}
+
+.password-strength.very-strong {
+    width: 100%;
+    background-color: #2ecc71;
+}
+
+/* Enhanced error and success styling */
+.error {
+    color: #ff4d4d;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    display: block;
+}
+
+.success {
+    color: #2ecc71;
+    padding: 10px;
+    background-color: #e8f7ee;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Improved form focus states */
+input:focus, select:focus {
+    border-color: #ff7e5f;
+    box-shadow: 0 0 0 2px rgba(255, 126, 95, 0.2);
+    outline: none;
+}
+
+/* Animated validation icons */
+.form-group.valid::after {
+    content: '✓';
+    color: #2ecc71;
+    position: absolute;
+    right: 10px;
+    top: 38px;
+    animation: fadeIn 0.3s;
+}
+
+.form-group.invalid::after {
+    content: '✗';
+    color: #ff4d4d;
+    position: absolute;
+    right: 10px;
+    top: 38px;
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
