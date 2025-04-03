@@ -251,7 +251,7 @@ try {
     <p>
       Contact us:
       <a href="mailto:support@adoptly.com">support@adoptly.com</a> |
-      Phone: +1234567890
+      Phone: +254756387850
     </p>
   </div>
   <div class="footer-social">

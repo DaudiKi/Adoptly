@@ -67,7 +67,7 @@ session_start();
       </div>
       <div class="featured-item">
         <div class="pet-card">
-          <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?q=80&w=2000&auto=format&fit=crop" alt="Luna - Siamese Cat">
+          <img src="https://i.pinimg.com/736x/e4/21/05/e42105ef057bbf781eda69f9023ff756.jpg" alt="Luna - Siamese Cat">
           <div class="pet-info">
             <h3>Luna</h3>
             <p class="pet-breed">Siamese Cat</p>
@@ -100,7 +100,7 @@ session_start();
     <p>
       Contact us:
       <a href="mailto:support@adoptly.com">support@adoptly.com</a> |
-      Phone: +1234567890
+      Phone: +254756387850
     </p>
   </div>
   <div class="footer-social">

@@ -56,7 +56,7 @@ try {
       background: #fff;
       border-radius: 10px;
       overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
       transition: transform 0.3s, box-shadow 0.3s;
     }
     
@@ -66,7 +66,7 @@ try {
     }
     
     .pet-image {
-      height: 200px;
+      height: 500px;
       width: 100%;
       object-fit: cover;
     }
@@ -311,7 +311,7 @@ try {
     <p>
       Contact us:
       <a href="mailto:support@adoptly.com">support@adoptly.com</a> |
-      Phone: +1234567890
+      Phone: +254756387850
     </p>
   </div>
   <div class="footer-social">

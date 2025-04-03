@@ -213,22 +213,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </form>
   </section>
 </main>
-<footer role="contentinfo">
-  <div class="footer-contact">
-    <p>
-      Contact us:
-      <a href="mailto:support@adoptly.com">support@adoptly.com</a> |
-      Phone: +1234567890
-    </p>
-  </div>
-  <div class="footer-social">
-    <a href="https://facebook.com" target="_blank" aria-label="Facebook">Facebook</a> |
-    <a href="https://twitter.com" target="_blank" aria-label="Twitter">Twitter</a> |
-    <a href="https://instagram.com" target="_blank" aria-label="Instagram">Instagram</a>
-  </div>
-  <p>© 2025 Adoptly. All rights reserved.</p>
-</footer>
-<div class="back-to-top" aria-label="Back to top">⇧</div>
 
 <!-- Terms and Conditions Modal -->
 <div id="terms-modal" class="modal">
@@ -250,6 +234,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
   </div>
 </div>
+
+<footer role="contentinfo">
+  <div class="footer-contact">
+    <p>
+      Contact us:
+      <a href="mailto:support@adoptly.com">support@adoptly.com</a> |
+      Phone: +254756387850
+    </p>
+  </div>
+  <div class="footer-social">
+    <a href="https://facebook.com" target="_blank" aria-label="Facebook">Facebook</a> |
+    <a href="https://twitter.com" target="_blank" aria-label="Twitter">Twitter</a> |
+    <a href="https://instagram.com" target="_blank" aria-label="Instagram">Instagram</a>
+  </div>
+  <p>© 2025 Adoptly. All rights reserved.</p>
+</footer>
+<div class="back-to-top" aria-label="Back to top">⇧</div>
+
+
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {

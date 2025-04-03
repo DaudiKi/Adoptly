@@ -2,7 +2,7 @@
 session_start();
 require_once 'db_connect.php';
 
-// Check if pet ID is provided
+// Check if pet ID is provided or not
 if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
     header("Location: AdoptlyGallery.php");
     exit();
@@ -102,10 +102,10 @@ try {
   <script defer src="Adoptly.js"></script>
   <style>
     .pet-detail-container {
-      max-width: 800px;
+      max-width: 1000px;
       margin: 30px auto;
       background: #fff;
-      border-radius: 10px;
+      border-radius: 20px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       overflow: hidden;
     }
@@ -118,8 +118,8 @@ try {
     
     .pet-detail-header img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      height: 1000px;
+      object-fit: fill;
     }
     
     .pet-status-badge {
@@ -398,7 +398,7 @@ try {
     <p>
       Contact us:
       <a href="mailto:support@adoptly.com">support@adoptly.com</a> |
-      Phone: +1234567890
+      Phone: +254756387850
     </p>
   </div>
   <div class="footer-social">
